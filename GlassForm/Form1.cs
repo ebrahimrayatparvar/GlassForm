@@ -16,5 +16,12 @@ namespace GlassForm
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Form2().ShowDialog();
+            this.Close();
+        }
     }
 }
